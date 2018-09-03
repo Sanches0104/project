@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
+  
 }
+
+
+
 
 body {
   margin: 0;
@@ -75,10 +79,11 @@ img {
   padding: 0 16px;
   vertical-align: top;
   outline: none;
+  color: red;
 
   font-size: 15px;
   line-height: 2.8;
-  color: #222;
+  /* color: #222; */
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
