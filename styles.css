@@ -3,11 +3,97 @@
   
 }
 
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+
+.logo {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      min-width: 302px;
+}
+
+.menu__link--favs {
+  display: flex;
+  align-items: center;
+  color: #673ab7;
+  text-decoration: none;
+}
+
+.menu {
+  right: 2rem;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__link--favs::before {
+  content: '\2605';
+  display: block;
+  margin-right: .5rem;
+  font-size: 1.4rem;
+}
+
+
+.query__submit {
+      border-radius: 0.812rem;
+      height: 1.625rem;
+      font-family: Comfortaa,Roboto,sans-serif;
+      line-height: 1.5;
+      background-color: #cddc39;
+      color: #fff;
+      outline: none;
+      width: 5.25rem;
+      min-width: 5.25rem;
+      padding: 0;
+      border: none;
+}
+
+.query {
+  display: flex;
+  justify-content: space-between;
+  max-width: 34.25rem;
+  margin: auto;
+  font-size: .875rem;
+}
+
+.input {
+
+      flex-basis: 29rem;
+      max-width: 29rem;
+      margin-right: .875rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      box-sizing: border-box;
+      border-radius: 0.812rem;
+      border: 2px solid #afb0b3;
+      outline: none;
+}
+
+.query__input {
+  flex-basis: 29rem;
+  max-width: 29rem;
+  margin-right: .875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.812rem;
+  border: 2px solid #afb0b3;
+  outline: none;
+}
+
 
 
 
 body {
-  background-color: green;
   margin: 0;
   padding: 16px 0;
   font-family: 'Roboto', sans-serif;
@@ -20,29 +106,19 @@ img {
 }
 
 .form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 400px;
+
   width: 100%;
   margin: 0 auto;
   padding: 8px;
-  border-radius: 2px;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
-}
 
-.input {
-  flex-grow: 1;
-  padding: 8px;
-  font-size: 16px;
-  font-family: inherit;
-  resize: none;
-  border-radius: 2px;
-}
+  display: flex;
+  justify-content: space-between;
+  font-size: .875rem;
+  }
+
 
 .grid {
-  width: 1170px;
+  width: 1300px;
   margin: 0 auto;
   padding: 16px;
   display: grid;
@@ -72,6 +148,7 @@ img {
   margin: 0 auto;
 }
 
+
 .button {
   position: relative;
   border: none;
@@ -80,11 +157,9 @@ img {
   padding: 0 16px;
   vertical-align: top;
   outline: none;
-  color: red;
 
   font-size: 15px;
   line-height: 2.8;
-  /* color: #222; */
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;

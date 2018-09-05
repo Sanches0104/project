@@ -10,16 +10,28 @@
 </head>
 
 <body>
-  <form class="form">
+
+<header>
+  <a href="index.html" class="logo logo--init js-logo">
+    <img src="img/logo.png" alt="logo">
+  </a>
+    <div class="menu">
+      <div class="menu__item">
+        <a href="# " class="menu__link menu__link--favs js-menu-favs ">Избранное</a>
+      </div>
+    </div>
+</header>
+
+  <form class="form query">
     <input type="text" class="input">
-    <button type=" submit " class="button ">Submit</button>
+    <button type=" submit " class="query__submit">Поиск</button>
   </form>
 
   <main class="main">
     <div class="grid">
     </div>
 
-    <button class="load-more button">Show more</button>
+    <button class="load-more query__submit">Показать еще</button>
   </main>
 
   <div class="spinner-overlay">
@@ -31,6 +43,15 @@
       <div class="rect5"></div>
     </div>
   </div>
+
+  <!-- При клике на картинку удаляется класс hidden -->
+  <!-- <div class="hidden backdrop js-backdrop hidden">
+    <div class="modal">
+      Создается на js
+      <div class="img-viewport"><img src="" alt=""></div>
+      <div class="img-toolbar"><img src="" alt=""></div>
+    </div>
+  </div> -->
 
   <script src="index.js "></script>
   <script src="app.js"></script>

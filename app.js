@@ -79,7 +79,7 @@ const handleFormSumit = e => {
 
   handleFetch({
     query: currentQuery,
-    count: 9,
+    count: 12,
     page: currentPage,
   });
 
@@ -92,7 +92,7 @@ const hanelLoadMoreClick = () => {
 
   handleFetch({
     query: currentQuery,
-    count: 9,
+    count: 12,
     page: currentPage,
   });
 };
